@@ -30,10 +30,10 @@ endorFP2float:
 	bx 	lr                      // return
 
 
-	.global zerEndorFP2float
+	.global zeroEndorFP2float
 	.equ 	FP_OFFSET, 4  		//  (# of saved regs -1) * 4
 
-zerEndorFP2float:
+zeroEndorFP2float:
   // PROLOG (DO NOT TOUCH!!!)
   push    {fp, lr}   		// save regs
 	add	fp, sp, #FP_OFFSET
