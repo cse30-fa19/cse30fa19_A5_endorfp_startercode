@@ -19,7 +19,7 @@ CFLAGS +=  --std=gnu99
 $(EXE) : $(OBJS)
 	gcc -o $@ $(CFLAGS) $(OBJS) $(LIBS)
 
-main.o : main.c endorfp2float.h
+main.o : main.c
 endorfp2float.o : endorfp2float.S
 	gcc -c $(CFLAGS) -gstabs+ endorfp2float.S
 
